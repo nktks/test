@@ -1,0 +1,13 @@
+on:
+  push:
+    branches:
+       - '**'
+
+jobs:
+  display-variables:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+    - name: Use variables
+      run: |
+        echo "repository variable : ${{ vars.HOGE }}"
