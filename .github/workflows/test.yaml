@@ -11,3 +11,5 @@ jobs:
     - name: Use variables
       run: |
         echo "repository variable : ${{ vars.HOGE }}"
+    - id: action
+      uses: ./.github/actions/composite/

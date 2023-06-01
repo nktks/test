@@ -1,0 +1,11 @@
+name: test_composite
+env:
+  TEST_ENV: test env
+runs:
+  using: "composite"
+  steps:
+    - name: test
+      shell: bash
+      run: |
+        echo "hello composite"
+        echo $TEST_ENV
