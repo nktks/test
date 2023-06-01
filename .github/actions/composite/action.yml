@@ -9,3 +9,4 @@ runs:
       run: |
         echo "hello composite"
         echo $TEST_ENV
+        echo $ENV_WORKFLOW

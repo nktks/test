@@ -2,6 +2,8 @@ on:
   push:
     branches:
        - '**'
+env:
+  ENV_WORKFLOW: "env workflow"
 
 jobs:
   display-variables:
